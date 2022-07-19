@@ -288,6 +288,10 @@ a {
     line-height: 44px;
 }
 
+.footer_contact {
+    width: 200px;
+}
+
 .footer {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -450,6 +454,10 @@ a {
         line-height: 1.2rem;
         text-align: center;
         margin-top: 20px;
+    }
+
+    .footer_contact {
+        width: 110px;
     }
 
     .footer {
