@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/2.0.0/css/font-awesome-ie7.css" integrity="sha512-yuZVHfLYhzrtt7FIl8rRWbS3Ej1QHP2DIGmfqEO+To6MEeGoZIAPfzstE8swf120X58vischMnqIfGVECaO8eQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+
+</head>
+<body>
+    <header class="header">
+        <div class="header_block-main header_block-main--size-contact">
+            <i class="fa-solid fa-fire-flame-simple header_title"></i>
+            <span class="header_title">Portfolio</span>
+        </div>
+        <nav class="header_block-main header_block-main--size">
+            <a href="#project" class="header_nav">Project</a>
+            <a href="#technologies" class="header_nav">Technologies</a>
+            <a href="#about_me" class="header_nav">About me</a>
+        </nav>
+        <div class="header_block-main header_block-main--size-contact">
+            <a href="tg://resolve?domain=kr_nasia" class="header_contact"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://github.com/asdrty" class="header_contact"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:nastya16081998@gmail.com" class="header_contact"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </header>
+    
+    <main class="main">
+        <section class="content">
+            <div class="content_description">
+                <p class="content_greet">Hey there!</p>
+                <h1 class="content_greeting">I`m Anastasia Tsimbaliuk</h1>
+                <h2 class="content_greeting">Junior front-end developer</h2>
+            </div>
+            <img src="./image/photo.jpg" alt="my Photo" class="content_photo">
+        </section>
+        <h2 class="headline" id="project">Project</h2>
+        <section class="project">
+            <div class="project_block">
+                <h3 class="project_title">Project 1</h3>
+                <p class="project_description">
+                    This project is quite simple, written using HTML and CSS.</p>
+                <button class="project_open" id="projectCss">Look it up</button>
+            </div>
+            <div class="project_block">
+                <h3 class="project_title">Project 2</h3>
+                <p class="project_description">Layout of a one-page site, using the Flex property.</p>
+                <button class="project_open" id="projectFlex">Look it up</button>
+            </div>
+            <div class="project_block">
+                <h3 class="project_title">Project 1</h3>
+                <p class="project_description">Layout of a one-page site, using the Grid property.</p>
+                <button class="project_open" id="projectGrid">Look it up</button>
+            </div>
+            <div class="project_block">
+                <h3 class="project_title">Project 1</h3>
+                <p class="project_description">Layout of a one-page site.</p>
+                <button class="project_open" id="projectSomeSite">Look it up</button>
+            </div>
+            <div class="project_block">
+                <h3 class="project_title">Project 1</h3>
+                <p class="project_description">Layout of a one-page site, using the Bootstrap.</p>
+                <button class="project_open" id="projectBootstrap">Look it up</button>
+            </div>
+            <div class="project_block">
+                <h3 class="project_title">Project 1</h3>
+                <p class="project_description">Adaptive layout of a one-page site.</p>
+                <button class="project_open" id="projectAdaptive">Look it up</button>
+            </div>
+            <div class="project_block">
+                <h3 class="project_title">Project 1</h3>
+                <p class="project_description">Adaptive layout of a one-page site, using Fetch.</p>
+                <button class="project_open" id="projectFetch">Look it up</button>
+            </div>
+        </section>
+    <!--   <h2 class="headline" id="technologies">Technologies</h2>
+        <section class="technol">
+            <div class="technologies"> 
+                <div class="technologies_skill">
+                    <h3 class="technologies_name">HTML</h3>
+                    <p class="technologies_value">Advanced</p>
+                </div>
+                <div class="technologies_look">
+                    <div class="technologies_in_look"></div>
+                </div>
+            </div>
+            <div class="technologies"> 
+                <div class="technologies_skill">
+                    <h3 class="technologies_name">CSS, SASS</h3>
+                    <p class="technologies_value">Advanced</p>
+                </div>
+                <div class="technologies_look">
+                    <div class="technologies_in_look"></div>
+                </div>
+            </div>
+            <div class="technologies"> 
+                <div class="technologies_skill">
+                    <h3 class="technologies_name">JavaScript</h3>
+                    <p class="technologies_value">Regular-Advanced</p>
+                </div>
+                <div class="technologies_look">
+                    <div class="technologies_in_look technologies_in_look--middle"></div>
+                </div>
+            </div>
+            <div class="technologies"> 
+                <div class="technologies_skill">
+                    <h3 class="technologies_name">React</h3>
+                    <p class="technologies_value">Beginner</p>
+                </div>
+                <div class="technologies_look" >
+                    <div class="technologies_in_look technologies_in_look--small"></div>
+                </div>
+            </div>
+        </section>
+        <section class="skills">
+            <h3 class="skills_additional">Additional technologies and skills</h3>
+            <div class="skill">
+                <div>
+                    <p class="skill_name">Git</p>
+                </div>
+                <div>
+                    <p class="skill_name">Adaptive layout</p>
+                </div>
+                <div>
+                    <p class="skill_name">Teamwork</p>
+                </div>
+                <div>
+                    <p class="skill_name">Quick learning</p>
+                </div>
+                <div>
+                    <p class="skill_name">Pre-intermediate english</p>
+                </div>
+            </div>
+        </section>
+        <h2 class="headline" id="about_me">About me</h2>
+        <div class="about-me_description"><p>Hello, I'm Nastya. I am 23 years old. Non-conflict, punctual, responsible, quick learner. She worked as a mathematics teacher in junior grades. Passed the Front-End basic course at Cursor education. Now I am completing the Front-End advanced course in Cursor education.</p></div>
+    </main>
+    <footer class="footer">
+            <a href="tg://resolve?domain=kr_nasia" class="header_contact"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://github.com/asdrty" class="header_contact"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:nastya16081998@gmail.com" class="header_contact"><i class="fa-solid fa-envelope"></i></a>
+            <a href="mailto:nastya16081998@gmail.com" class="header_contact"><span class="email"> nastya16081998@gmail.com </span></i></a>
+    </footer> --> 
+    <script src="./script/script.js"></script>
+</body>
+</html>
