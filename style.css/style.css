@@ -15,8 +15,11 @@ a {
 }
 
 .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-top: 30px;
     font-weight: 400;
     font-size: 22px;
@@ -25,8 +28,12 @@ a {
 
 .header_block-main--size {
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 .header_nav, .header_contact, .header_title {
@@ -37,20 +44,35 @@ a {
 
 .header_block-main--size-contact {
     width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .content {
     margin-top: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .content_description {
@@ -62,7 +84,8 @@ a {
     width: 20%;
     height: 300px;
     border-radius: 30px;
-    box-shadow: 3px 3px , -.5em 0 .8em;
+    -webkit-box-shadow: 3px 3px , -.5em 0 .8em;
+            box-shadow: 3px 3px , -.5em 0 .8em;
 }
 
 .content_greeting {
@@ -84,17 +107,28 @@ a {
 }
 
 .project {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 45% 10% 45%;
     grid-template-columns: repeat(2, 45%);
-    column-gap: 10%; 
+    -webkit-column-gap: 10%;
+       -moz-column-gap: 10%;
+            column-gap: 10%; 
     row-gap: 80px;
     margin-top: 5%;
 }
 
 .project_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-weight: 200;
 }
 
@@ -120,18 +154,26 @@ a {
 	border-radius: 50px;
 	color: #262626;
 	background-color: #fff;
-	box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+	-webkit-box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+	        box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
 	cursor: pointer;
+	-webkit-transition: -webkit-box-shadow 0.2s;
+	transition: -webkit-box-shadow 0.2s;
+	-o-transition: box-shadow 0.2s;
 	transition: box-shadow 0.2s;
+	transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
 }
 .project_open:focus-visible {
 	border: 1px solid #4c51f9;
 	outline: none;
 }
 .project_open:hover {
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
 	transition: all 0.2s;
     background-color: #444;
-	box-shadow: 0 7px 14px rgba(239, 241, 242, 0.13), 0 3px 6px rgba(163, 159, 159, 0.08);
+	-webkit-box-shadow: 0 7px 14px rgba(239, 241, 242, 0.13), 0 3px 6px rgba(163, 159, 159, 0.08);
+	        box-shadow: 0 7px 14px rgba(239, 241, 242, 0.13), 0 3px 6px rgba(163, 159, 159, 0.08);
 }
 .project_open:active {
 	background-color: #808080;
@@ -151,14 +193,25 @@ a {
 }
 
 .technol, .technologies {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .technologies_skill {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 30px;
 }
 
@@ -177,6 +230,8 @@ a {
     height: 100%;
     width: 75%;
     border-radius: 83px;
+    background: -webkit-gradient(linear, right top, left top, from(#13ADC7), color-stop(66.67%, #6978D1), to(#945DD6));
+    background: -o-linear-gradient(right, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
     background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
 }
 
@@ -204,9 +259,13 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 28% 8% 28% 8% 28%;
     grid-template-columns: repeat(3, 28%);
-    column-gap: 8%;
+    -webkit-column-gap: 8%;
+       -moz-column-gap: 8%;
+            column-gap: 8%;
     row-gap: 30px;
 }
 
@@ -232,9 +291,15 @@ a {
 .footer {
     margin-top: 50px;
     margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 32px;
 }
 
@@ -249,9 +314,19 @@ a {
         width: 100vw;
     }
 
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
     .header, .header_block-main--size {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         font-size: 1rem;
     }
 
@@ -266,11 +341,17 @@ a {
     .header_contact {
         margin: 0 0.2rem;
         color:#13ADC7;
+        font-size: 1.5rem;
     }
 
     .content {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin-top: 1rem;
     }
 
@@ -288,21 +369,25 @@ a {
 
     .content_photo {
         height: 104px;
-        width: 15%;
+        width: 30%;
         margin-top: 1rem;
     }
 
     .headline {
-        font-size: 1rem;
+        color:#13ADC7;
+        font-size: 1.3rem;
         line-height: 1.5rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
+        margin-left: 0;
+        text-align: center;
     }
-    .project {
-        grid-template-columns: 80%;
-        margin-left: auto;
-        margin-right: auto;
+    .project, .skill {
+        -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
         row-gap: 1%;
-        column-gap: 0;
+        -webkit-column-gap: 0;
+           -moz-column-gap: 0;
+                column-gap: 0;
     }
 
     .project_title {
@@ -311,13 +396,72 @@ a {
     }
 
     .project_description {
-        font-size: .6rem;
+        font-size: .8rem;
         margin: .6rem 0;
+        text-align: center;
     }
 
     .project_open {
         font-size: 1rem;
         height: 2rem;
         width: 60%;
+    }
+
+    #technologies {
+        margin-top: 4rem;
+        margin-bottom: 0;
+    }
+
+    .technol {
+        margin-top: 0;
+    }
+
+    .technologies_name {
+        font-size: .9rem;
+    }
+
+    .technologies_value {
+        font-size: .7rem;
+    }
+
+    .technol {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .skills_additional {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .skill_name {
+        font-size: .9rem;
+        text-align: left;
+    }
+
+    .skill {
+        row-gap: 20px;
+    }
+
+    .about-me_description {
+        font-size: 1rem;
+        font-weight: 100;
+        line-height: 1.2rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .email {
+        font-size: 1rem;
+        color: white;
     }
 }
