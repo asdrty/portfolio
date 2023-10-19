@@ -372,7 +372,7 @@ a {
     }
 
     .content_photo {
-        height: 104px;
+        height: auto;
         width: 30%;
         margin-top: 1rem;
     }
